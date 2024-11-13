@@ -24,6 +24,7 @@
 
 #### Concept and Review
 * **Kaushik Behera** - Concept idea and fellow fieldtester
+[![Instagram](https://img.shields.io/badge/Instagram-%40______the____ripper______-fa4d88?logo=instagram&logoColor=white)](https://www.instagram.com/___the__ripper___)
 
 #### Research and Documentation
 * **Argodeep Satpathy** - Medical and Development Research
