@@ -26,7 +26,7 @@
 * **Kaushik Behera** - Concept idea and fellow fieldtester
 
 #### Research and Documentation
-* **Argodeep Satpathy** - Medical Research
+* **Argodeep Satpathy** - Medical and Development Research
 * **Vardan Raj Srivastava** - Documetation Drafter for Exhibitions/Competitions
 
 ----
