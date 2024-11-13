@@ -4,12 +4,12 @@
 ----
 
 ### Table of Contents
-* [Overview](###overview)
-* [Contributors](###contributors)
-* [Technology Stack](###technology-stack)
-* [How it Works](###how-it-works)
-* [Our Mission](###our-mission)
-* [Getting Started](###getting-started)
+* [Overview](#overview)
+* [Contributors](#contributors)
+* [Technology Stack](#technology-stack)
+* [How it Works](#how-it-works)
+* [Our Mission](#our-mission)
+* [Getting Started](#getting-started)
 
 ----
 
