@@ -1,7 +1,4 @@
-# Panacea AI
-**Panacea AI** is an **AI-powered medical assistant** designed to make healthcare **accessible, affordable, and efficient**. Panacea AI aims to provide **instant diagnoses, support medical professionals**, and bridge the gap in healthcare accessibility.
-
-----
+![banner](assets/head.png)
 
 ### Table of Contents
 * [Overview](#overview)
@@ -9,7 +6,6 @@
 * [Technology Stack](#technology-stack)
 * [How it Works](#how-it-works)
 * [Our Mission](#our-mission)
-* [Getting Started](#getting-started)
 
 ----
 
