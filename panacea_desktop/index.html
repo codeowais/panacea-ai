@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <title>Panacea AI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <logo>Panacea AI</logo>
+    <div id="cortana-halo">
+        <div id="circle"></div>
+    </div>
+    <div id="cortana-text">
+        <div id="chatarea"></div>
+        <div id="text-field">
+            <textarea id="input-box" placeholder="Tell me about your symptoms..."></textarea>
+            <button id="send">>>></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function addChatMessage(message) {
+            var chatArea = document.getElementById('chatarea');
+            var newChatDiv = document.createElement('div');
+            newChatDiv.className = 'chat';
+            newChatDiv.innerText = message;
+            chatArea.appendChild(newChatDiv);
+            chatArea.scrollTop = chatArea.scrollHeight;
+        }
+
+        function speakText(text) {
+            // Check if the Web Speech API is supported
+            if ('speechSynthesis' in window) {
+                // Create a new speech synthesis utterance for the given text
+                const utterance = new SpeechSynthesisUtterance(text);
+
+                // Optionally, you can set properties such as pitch, rate, and volume
+                utterance.pitch = 1;   // range 0-2
+                utterance.rate = 1;    // range 0.1-10
+                utterance.volume = 1;  // range 0-1
+
+                // Speak the text
+                window.speechSynthesis.speak(utterance);
+            } else {
+                console.error('Text-to-speech is not supported in this browser.');
+            }
+        }
+
+        document.getElementById("send").addEventListener('click', function() {
+            var inputBox = document.getElementById('input-box');
+            var message = inputBox.value;
+            if (message === ""){
+                console.log("Error: Blank Field");
+            }
+            else {
+                addChatMessage(message);
+                inputBox.value = "";
+                pywebview.api.frontend_input(message).then(function(response) {
+                    addChatMessage(response);
+                    speakText(response);
+                }).catch(function(error) {
+                    console.log("Error:", error);
+                });
+
+            }
+        })
+    </script>
+</body>
+</html>
