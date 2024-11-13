@@ -27,7 +27,7 @@
 
 #### Research and Documentation
 * **Argodeep Satpathy** - Medical and Development Research
-* **Vardan Raj Srivastava** - Documetation Drafter for Exhibitions/Competitions
+* **Vardan Raj Srivastava** - Documetation Drafting for Exhibitions/Competitions
 
 ----
 ![UI Preview](assets/ui.png)
