@@ -30,6 +30,8 @@
 * **Vardan Raj Srivastava** - Documetation Drafter for Exhibitions/Competitions
 
 ----
+![UI Preview](assets/ui.png)
+----
 
 ### Technology Stack
 
