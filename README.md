@@ -37,13 +37,10 @@
 
 ### Technology Stack
 
-**Backend** - **Python**, using ![ollama](https://img.shields.io/badge/ollama-666666) ![langchain](https://img.shields.io/badge/langchain-666666) and ![pywebview](https://img.shields.io/badge/pywebview-666666) 
-
-**UI and Frontend** - **HTML** and **CSS**, with **JavaScript** for interactivity
-
-**Data Flow**: **JavaScript** and **Python** work together to enable seamless data movement between the front and back end.
-
-**Web Audio API**: To provide an optional auditory Text-To-Speech output.
+* **Backend** - **Python**, using ![ollama](https://img.shields.io/badge/ollama-666666) ![langchain](https://img.shields.io/badge/langchain-666666) and ![pywebview](https://img.shields.io/badge/pywebview-666666) 
+* **UI and Frontend** - **HTML** and **CSS**, with **JavaScript** for interactivity
+* **Data Flow**: **JavaScript** and **Python** work together to enable seamless data movement between the front and back end.
+* **Web Audio API**: To provide an optional auditory Text-To-Speech output.
 
 ----
 
