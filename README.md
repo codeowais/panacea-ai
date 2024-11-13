@@ -3,39 +3,39 @@
 
 ----
 
-## Table of Contents
-* [Overview](##overview)
-* [Contributors](##contributors)
-* [Technology Stack](##technology-stack)
-* [How it Works](##how-it-works)
-* [Our Mission](##our-mission)
-* [Getting Started](##getting-started)
+### Table of Contents
+* [Overview](###overview)
+* [Contributors](###contributors)
+* [Technology Stack](###technology-stack)
+* [How it Works](###how-it-works)
+* [Our Mission](###our-mission)
+* [Getting Started](###getting-started)
 
 ----
 
-## Overview
+### Overview
 **Panacea AI** is an **AI-powered medical assistant** designed as a one-stop solution for providing **quick and free preliminary medical assessments**. By combining advanced **AI technology** with **user-friendly interfaces**, Panacea aims to help patients receive **timely support** while **assisting healthcare professionals** in focusing on **critical cases**.
 
 ----
 
-## Contributors
+### Contributors
 
-####Developers
+#### Developers
 * **Syed Owais** - Lead UI and Backend Developer
 ![Website](https://img.shields.io/badge/Website-codeowais.github.io/profile-fff)
 [![Instagram](https://img.shields.io/badge/Instagram-%40mintcrystal__450-fa4d88?logo=instagram&logoColor=white)](https://www.instagram.com/mintcrystal_450)
 ![Discord](https://img.shields.io/badge/Discord-mintcrystal__450-5865f2?logo=discord&logoColor=white)
 
-####Concept and Review
+#### Concept and Review
 * **Kaushik Behera** - Concept idea and fellow fieldtester
 
-####Research and Documentation
+#### Research and Documentation
 * **Argodeep Satpathy** - Medical Research
 * **Vardan Raj Srivastava** - Documetation Drafter for Exhibitions/Competitions
 
 ----
 
-## Technology Stack
+### Technology Stack
 
 **Backend** - **Python**, using ![ollama](https://img.shields.io/badge/ollama-666666) ![langchain](https://img.shields.io/badge/langchain-666666) and ![pywebview](https://img.shields.io/badge/pywebview-666666) 
 **UI and Frontend** - **HTML** and **CSS**, with **JavaScript** for interactivity
@@ -44,7 +44,7 @@
 
 ----
 
-## How it Works
+### How it Works
 
 * **Symptom Input**: Users enter their symptoms in a chat interface.
 * **Backend Processing**: The data is processed and synthesized with pre-defined medical context.
@@ -53,7 +53,7 @@
 
 ----
 
-## Our Mission
+### Our Mission
 
 Our mission is to democratize primary healthcare by:
 
