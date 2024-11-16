@@ -29,6 +29,7 @@
 #### Research and Documentation
 * **Argodeep Satpathy** - Medical and Development Research
 * **Vardan Raj Srivastava** - Documetation Drafting for Exhibitions/Competitions
+[![Instagram](https://img.shields.io/badge/Instagram-%40raj__vardan__srivastava-fa4d88?logo=instagram&logoColor=white)](https://www.instagram.com/raj_vardan_srivastava)
 
 ----
 ![UI Preview](assets/ui.png)
