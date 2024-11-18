@@ -107,3 +107,41 @@ logo{
 #audio{
     display: none;
 }
+
+#startListeningButton{
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 2rem;
+    border-radius: 100px;
+    border-width: 0;
+}
+.recording{
+    background-color: #ff0000;
+    transition: background-color 200ms ease;
+}
+.recording svg{
+    width: 50%;
+    height: 50%;
+    fill: #fff;
+    transition: fill 200ms ease;
+}
+.recording:hover{
+    background-color: #cc0000;
+    transition: background-color 200ms ease;
+}
+.not-recording{
+    background-color: white;
+    transition: background-color 200ms ease;
+}
+.not-recording svg{
+    width: 50%;
+    height: 50%;
+    fill: #000;
+    transition: fill 200ms ease;
+}
+.not-recording:hover{
+    background-color: #cccccc;
+    transition: background-color 200ms ease;
+}
