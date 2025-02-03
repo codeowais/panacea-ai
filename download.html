@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<head>
+    <meta property="og:site_name" content="Panacea AI">
+    <meta name="description" content="An AI-Powered Medical Assistant">
+    <meta name="author" content="Syed Owais">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="referrer" content="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <title>Panacea AI - An AI-Powered Medical Assistant</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/navbar.css">
+    <style>
+        @font-face {
+            font-family: 'corbel';
+            src: url(assets/corbel.ttf);
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+            background-color: #000000;
+        }
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        #cover{
+            width: 100vw;
+            height: 100vh;
+            background-size: auto auto;
+            background-repeat: no-repeat;
+            background-image: url(assets/bg.png);
+            position: fixed;
+            z-index: -1;
+        }
+        #transparent{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: right;
+            background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.5));
+        }
+        #display{
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,1));
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+        }
+        #title{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: 'corbel', sans-serif;
+            color: #fff;
+            gap: 20px;
+        }
+        h1{
+            font-family: 'corbel', sans-serif;
+            font-weight: normal;
+            font-size: 3.25vw;
+            margin: 0;
+            color: #fff;
+        }
+        h1:hover{
+            cursor: default;
+        }
+        h{
+            font-family: 'corbel', sans-serif;
+            font-size: 1.75rem;
+            color: #fff;
+            margin-left: 20px;
+            margin-top: 20px;
+            position: fixed;
+            z-index: 4;
+        }
+        #dload{
+            padding: 22.5px;
+            background-color: #fff;
+            border-radius: 30px;
+            border: 0;
+            font-family: "Lato", sans-serif;
+            font-size: 1.1rem;
+            transition: background-color 200ms ease;
+        }
+        #dload:hover{
+            background-color: #aaa;
+            cursor: pointer;
+        }
+        h4{
+            color: #fff;
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            font-weight: normal;
+        }
+        #bar{
+            width: 2.5px;
+            height: 80vh;
+            background-color: #fff;
+        }
+        .guide, .guide2{
+            width: 40vw;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .guide ul, .guide2 ul{
+            color: #fff;
+            font-family: "Lato", sans-serif;
+            font-size: 1.05rem;
+        }
+        .guide li, .guide2 li{
+            margin-top: 10px;
+        }
+
+        @media only screen and (max-width: 600px){
+            #cover{
+                background-size: auto 100vh;
+            }
+            #title{
+                width: 100vw;
+            }
+            h1{
+                font-size: 6.5vw;
+            }
+            #display{
+                flex-direction: column;
+                height: auto;
+            }
+            .guide, .guide2{
+                width: 85vw;
+                height: auto;
+            }
+            #bar{
+                width: 85vw;
+                height: 5px;
+            }
+            .guide2{
+                padding-bottom: 10vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h>Panacea AI</h>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <a href="index.html"><li class="nav-item">
+                <span class="link-text">Home</span>
+            </li></a>
+            <a href="https://www.github.com/codeowais/Panacea-AI/"><li class="nav-item">
+                <span class="link-text">Github</span>
+            </li></a>
+            <a href="download.html"><li class="nav-item">
+                <span class="link-text">Downloads</span>
+            </li></a>
+            <a href="community.html"><li class="nav-item">
+                <span class="link-text">Community</span>
+            </li></a>
+        </ul>
+    </nav>
+    <nav class="navbar_mobile">
+        <ul class="navbar-nava">
+            <a href="index.html"><li class="nav-item">
+                <span class="link-kext">Home</span>
+            </li></a>
+            <a href="https://www.github.com/codeowais/Panacea-AI/"><li class="nav-item">
+                <span class="link-kext">Github</span>
+            </li></a>
+            <a href="download.html"><li class="nav-item">
+                <span class="link-kext">Downloads</span>
+            </li></a>
+            <a href="community.html"><li class="nav-item">
+                <span class="link-kext">Communtiy</span>
+            </li></a>
+        </ul>
+    </nav>
+    <div id="cover"></div>
+    <div id="transparent">
+        <div id="title">
+            <h1>Download Panacea</h1>
+            <div>
+                <a href="https://github.com/codeowais/Panacea-AI/releases/latest/download/PanaceaSetup.exe"><button id="dload">Download for Windows</button></a>
+            </div>
+            <h4>Requires Windows 10 and above<br><br>Scroll down for installation steps</h4>
+        </div>
+    </div>
+    <div id="display">
+        <div class="guide">
+            <h1>Installation</h1>
+            <ul>
+                <li>Download PanaceaSetup.exe</li>
+                <li>Place the setup file in the directory you wish to install</li>
+                <li>The installer will prompt you to download Ollama if it doesn't find OllamaSetup.exe<br>
+                (you may skip this step if you already have Ollama installed)</li>
+                <ul>
+                    <li>Note: If you haven't installed Ollama before, you will also have to install an AI Model. Refer to ollama.com for steps to install it</li>
+                </ul>
+                <li>Once finished, you will see a bin folder in the same directory as the setup file</li>
+            </ul>
+        </div>
+        <div id="bar"></div>
+        <div class="guide2">
+            <h1>Runtime</h1>
+            <ul>
+                <li>Start the AI Model either by using the model_config.exe in the bin folder or by typing "ollama run [your model name] in a terminal window</li>
+                <ul>
+                    <li>If using the model_config.exe in the bin folder, kindly keep it open in the background for convenience</li>
+                </ul>
+                <li>Use the model_config.exe file to select the AI model for Panacea and check if it's running</li>
+                <li>Run the .exe file of the flavour of Panacea you wish</li>
+                <ul>
+                    <li>Currently, on-the-fly AI model switching is not supported, but you can check the model being used in the app</li>
+                </ul>
+                <li>Once done, you can stop the AI model using model_config.exe or by typing "ollama stop [your model name]" in the terminal window</li>
+            </ul>
+        </div>
+    </div>
+</body>

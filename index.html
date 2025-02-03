@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<head>
+    <meta property="og:site_name" content="Panacea AI">
+    <meta name="description" content="An AI-Powered Medical Assistant">
+    <meta name="author" content="Syed Owais">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="referrer" content="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <title>Panacea AI - An AI-Powered Medical Assistant</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/navbar.css">
+    <style>
+        @font-face {
+            font-family: 'corbel';
+            src: url(assets/corbel.ttf);
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+            background-color: #000000;
+        }
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        #cover{
+            width: 100vw;
+            height: 100vh;
+            background-size: auto auto;
+            background-repeat: no-repeat;
+            background-image: url(assets/bg.png);
+            position: fixed;
+            z-index: -1;
+        }
+        #transparent{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: right;
+            background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.5));
+        }
+        #display{
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,1));
+        }
+        #download{
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0,0,0,1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #download div{
+            margin-top: 2rem;
+            display: flex;
+            gap: 20px;
+        }
+        #title{
+            width: 45vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            font-family: 'corbel', sans-serif;
+            color: #fff;
+        }
+        h1{
+            font-weight: normal;
+            font-size: 3.25vw;
+            margin: 0;
+            color: #fff;
+        }
+        h1:hover{
+            cursor: default;
+        }
+        h1:hover color_adjust{
+            color: #00bfa5;
+        }
+        color_adjust{
+            color: #fff;
+            transition: color 200ms ease;
+        }
+        h{
+            font-family: 'corbel', sans-serif;
+            font-size: 1.75rem;
+            color: #fff;
+            margin-left: 20px;
+            margin-top: 20px;
+            position: fixed;
+            z-index: 4;
+        }
+        .ui_slider{
+            position: relative;
+            max-width: 50rem;
+            margin: 0 auto;
+
+        }
+        .slider{
+            display: flex;
+            aspect-ratio: 384 / 197;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+
+        }
+        .slider img{
+            flex: 1 0 100%;
+            scroll-snap-align: start;
+            object-fit: cover;
+        }
+        h3{
+            font-family: 'Lato', sans-serif;
+            color: #fff;
+            font-weight: normal;
+            margin-top: 3rem;
+        }
+        credits{
+            font-size: 3.25vw;
+            color: #fff;
+            font-family: 'corbel', sans-serif;
+        }
+        .credit_button{
+            padding: 20px;
+            border-radius: 30px;
+            border: 0;
+            transition: background-color 200ms ease;
+            font-size: 1.1rem;
+            font-family: 'corbel', sans-serif;
+        }
+        .credit_button:hover{
+            background-color: #00bfa5;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 600px){
+            #cover{
+                background-size: auto 100vh;
+            }
+            #title{
+                width: 90vw;
+            }
+            h1{
+                font-size: 6.5vw;
+            }
+            credits{
+                text-align: center;
+                font-size: 6.5vw;
+            }
+            #display{
+                height: 50vh;
+            }
+            .ui_slider{
+                max-width: 22.5rem;
+            }
+            #download div{
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h>Panacea AI</h>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <a href="index.html"><li class="nav-item">
+                <span class="link-text">Home</span>
+            </li></a>
+            <a href="https://www.github.com/codeowais/Panacea-AI/"><li class="nav-item">
+                <span class="link-text">Github</span>
+            </li></a>
+            <a href="download.html"><li class="nav-item">
+                <span class="link-text">Downloads</span>
+            </li></a>
+            <a href="community.html"><li class="nav-item">
+                <span class="link-text">Community</span>
+            </li></a>
+        </ul>
+    </nav>
+    <nav class="navbar_mobile">
+        <ul class="navbar-nava">
+            <a href="index.html"><li class="nav-item">
+                <span class="link-kext">Home</span>
+            </li></a>
+            <a href="https://www.github.com/codeowais/Panacea-AI/"><li class="nav-item">
+                <span class="link-kext">Github</span>
+            </li></a>
+            <a href="download.html"><li class="nav-item">
+                <span class="link-kext">Downloads</span>
+            </li></a>
+            <a href="community.html"><li class="nav-item">
+                <span class="link-kext">Communtiy</span>
+            </li></a>
+        </ul>
+    </nav>
+    <div id="cover"></div>
+    <div id="transparent">
+        <div id="title">
+            <h1>Revolutionizing Healthcare<br>with <color_adjust>AI Technology</color_adjust></h1>
+        </div>
+    </div>
+    <div id="display">
+        <div class="ui_container">
+            <div class="ui_slider">
+                <div class="slider">
+                    <img src="assets/panacea.png" id="1">
+                    <img src="assets/eirene.png" id="2">
+                </div>
+            </div>
+        </div>
+        <center><h3>Swipe to view app screenshots</h3></center>
+    </div>
+    <div id="download">
+        <credits>Join us in improving and democratizing <font color="#00bfa5">healthcare</font><br>for over a <font color="#00bfa5">billion people</font></credits>
+        <div>
+            <button class="credit_button">Download the app</button>
+            <button class="credit_button">Join the Community</button>
+        </div>
+    </div>
+</body>
