@@ -18,7 +18,7 @@
 
 #### Developers
 * **Syed Owais** - Lead UI and Backend Developer
-![Website](https://img.shields.io/badge/Website-codeowais.github.io/profile-fff)
+[![Website](https://img.shields.io/badge/Website-codeowais.github.io/profile-fff)](https://www.codeowais.github.io/profile)
 [![Instagram](https://img.shields.io/badge/Instagram-%40mintcrystal__450-fa4d88?logo=instagram&logoColor=white)](https://www.instagram.com/mintcrystal_450)
 ![Discord](https://img.shields.io/badge/Discord-mintcrystal__450-5865f2?logo=discord&logoColor=white)
 
