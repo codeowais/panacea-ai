@@ -1,0 +1,192 @@
+:root {
+  --glow: #00BFA5;
+  --bg: #000000;
+}
+
+@font-face {
+    font-family: "sfpro";
+    src: url(sfpro.otf);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    overflow-x: hidden;
+}
+#cortana-halo{
+    width: 67.5vw;
+    height: 100vh;
+    background-color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#text-field{
+    height: 17.5%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    background-color: #222222;
+}
+subline{
+    z-index: 1;
+    /*font-family: 'corbel', sans-serif;*/
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #dddddd;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-left: 20px;
+    margin-bottom: 20px; 
+}
+version{
+    z-index: 1;
+    /*font-family: 'corbel', sans-serif;*/
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #dddddd;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+#cortana-text{
+    width: calc(100vw - 67.5vw);
+    height: 100vh;
+    background-color: #333333;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#circle {
+    width: 13.5vw;
+    height: 13.5vw;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 10px solid #ffffff;
+    /*box-shadow: 0 0 80px 40px #3498db, inset 0 0 25px 12.5px #3498db;*/
+    box-shadow: 0 0 80px 40px var(--glow), inset 0 0 25px 12.5px var(--glow);
+    transition: width 0.1s, height 0.1s;
+}
+#input-box{
+    width: 23vw;
+    min-height: 65%;
+    height: auto;
+    margin-left: calc(0.033*(100vw - 67.5vw));
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    border-radius: 15px;
+    border-width: 0px;
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'sfpro';
+    resize: none;
+}
+logo{
+    z-index: 1;
+    font-family: 'corbel', sans-serif;
+    font-size: 1.75rem;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.chat{
+    width: 80%;
+    height: auto;
+    background-color: #222222;
+    padding: 5%;
+    margin-top: 5%;
+    font-family: 'sfpro';
+    color: #ffffff;
+    font-size: 1rem;
+    border-radius: 15px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.ai-chat{
+    width: 80%;
+    height: auto;
+    background-color: #222222;
+    padding: 5%;
+    margin-top: 5%;
+    font-family: 'sfpro';
+    color: #ffffff;
+    font-size: 1rem;
+    font-style: italic;
+    border-radius: 15px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+#chatarea{
+    margin-left: 5%;
+    width: 100%;
+    height: calc(100% - 20%);
+    overflow-y: auto;
+}
+#send{
+    min-width: 57.5px;
+    min-height: 57.5px;
+    margin-left: 1rem;
+    border-radius: 100px;
+    border-width: 0;
+    background-color: #ffffff;
+    transition: background-color 200ms ease;
+}
+#send:hover{
+    cursor: pointer;
+    background-color: #cccccc;
+    transition: background-color 200ms ease;
+}
+#audio{
+    display: none;
+}
+
+#startListeningButton{
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 2rem;
+    border-radius: 100px;
+    border-width: 0;
+}
+.recording{
+    background-color: #ff0000;
+    transition: background-color 200ms ease;
+}
+.recording svg{
+    width: 50%;
+    height: 50%;
+    fill: #fff;
+    transition: fill 200ms ease;
+}
+.recording:hover{
+    background-color: #cc0000;
+    transition: background-color 200ms ease;
+    cursor: pointer;
+}
+.not-recording{
+    background-color: white;
+    transition: background-color 200ms ease;
+}
+.not-recording svg{
+    width: 50%;
+    height: 50%;
+    fill: #000;
+    transition: fill 200ms ease;
+}
+.not-recording:hover{
+    background-color: #cccccc;
+    transition: background-color 200ms ease;
+    cursor: pointer;
+}
