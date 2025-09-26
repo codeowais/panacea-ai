@@ -1,3 +1,13 @@
+<!--
+
+Panacea AI Web App
+03:51 27-09-2025
+Authors: Syed Owais
+
+https://codeowais.github.io/panacea-ai/
+
+
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -463,5 +473,13 @@
         }
         document.querySelector('#expand').addEventListener('click', () => {handleChatToggle()})
     </script>
+    <script>
+        const allowedRef = "https://panacea-app.github.io/playground"; // your “front door” URL
+        if (document.referrer !== allowedRef) {
+          // Redirect away or show a “not allowed” message
+          window.location.href = "https://panacea-app.github.io/playground";
+        }
+    </script>
 </body>
+
 </html>
